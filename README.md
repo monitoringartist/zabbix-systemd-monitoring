@@ -47,8 +47,8 @@ Note: fid - full unit id (macro *{#FID}*)
 Installation
 ============
 
-* Import provided template [Zabbix-Template-App-systemd-service-simple.xml](https://raw.githubusercontent.com/monitoringartist/zabbix-docker-monitoring/master/template/Zabbix-Template-App-systemd-service.xml)
-or [Zabbix-Template-App-systemd-service-advanced.xml](https://raw.githubusercontent.com/monitoringartist/zabbix-docker-monitoring/master/template/Zabbix-Template-App-systemd-service-advanced.xml).
+* Import provided template [Zabbix-Template-App-systemd-service-simple.xml](https://raw.githubusercontent.com/monitoringartist/zabbix-systemd-monitoring/master/template/Zabbix-Template-App-systemd-service-simple.xml)
+or [Zabbix-Template-App-systemd-service-advanced.xml](https://raw.githubusercontent.com/monitoringartist/zabbix-systemd-monitoring/master/template/Zabbix-Template-App-systemd-service-advanced.xml).
 * Configure your Zabbix agent(s) - load downloaded/compiled
 zabbix_module_docker.so<br>
 https://www.zabbix.com/documentation/3.0/manual/config/items/loadablemodules  
