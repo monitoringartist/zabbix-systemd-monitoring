@@ -3,6 +3,8 @@ Zabbix systemd Monitoring (beta)
 
 If you like or use this project, please provide feedback to author - Star it ★.
 
+Look also on https://github.com/cavaliercoder/zabbix-module-systemd.
+
 Monitoring of systemd units by using Zabbix. Available CPU, mem,
 blkio, ... metrics. Compiled [Zabbix Docker shared module](https://github.com/monitoringartist/zabbix-docker-monitoring)
 is required. See section [Compilation](https://github.com/monitoringartist/zabbix-docker-monitoring#compilation).
