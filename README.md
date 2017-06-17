@@ -1,5 +1,10 @@
-Zabbix systemd Monitoring (beta)
-================================
+<p align="center"><b>THIS PROJECT IS DEPRECATED IN FAVOR OF BETTER CONCEPT<br><a href="https://github.com/cavaliercoder/zabbix-module-systemd">cavaliercoder/zabbix-module-systemd</a></b></p><br><br>
+
+[<img src="https://monitoringartist.github.io/managed-by-monitoringartist.png" alt="Managed by Monitoring Artist: DevOps / Docker / Kubernetes / AWS ECS / Zabbix / Zenoss / Terraform / Monitoring" align="right"/>](http://www.monitoringartist.com 'DevOps / Docker / Kubernetes / AWS ECS / Zabbix / Zenoss / Terraform / Monitoring')
+
+# Zabbix systemd Monitoring
+
+![Unsupported](https://img.shields.io/badge/development_status-unsupported-red.svg)
 
 If you like or use this project, please provide feedback to author - Star it ★.
 
@@ -32,8 +37,7 @@ for free:
 
 [![Paypal donate button](http://jangaraj.com/img/github-donate-button02.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8LB6J222WRUZ4)
 
-Available metrics
-=================
+# Available metrics
 
 Note: fid - full unit id (macro *{#FID}*)
 
@@ -45,8 +49,7 @@ Note: fid - full unit id (macro *{#FID}*)
 | **systemd.dev[fid,bfile,bmetric]** | **Blk IO metrics:**<br>**bfile** - container blkio pseudo-file, e.g.: *blkio.io_merged, blkio.io_queued, blkio.io_service_bytes, blkio.io_serviced, blkio.io_service_time, blkio.io_wait_time, blkio.sectors, blkio.time, blkio.avg_queue_size, blkio.idle_time, blkio.dequeue, ...*<br>**bmetric** - any available blkio metric in selected pseudo-file, e.g.: *Total*. Option for selected block device only is also available e.g. *'8:0 Sync'* (quotes must be used in key parameter in this case)<br>Note: Some pseudo blkio files are available only if kernel config *CONFIG_DEBUG_BLK_CGROUP=y*, see recommended docs. |
 | **systemd.up[fid]** | **Running state check:**<br>1 if unit is running, otherwise 0 |
 
-Installation
-============
+# Installation
 
 * Import provided template [Zabbix-Template-App-systemd-service-simple.xml](https://raw.githubusercontent.com/monitoringartist/zabbix-systemd-monitoring/master/template/Zabbix-Template-App-systemd-service-simple.xml)
 or [Zabbix-Template-App-systemd-service-advanced.xml](https://raw.githubusercontent.com/monitoringartist/zabbix-systemd-monitoring/master/template/Zabbix-Template-App-systemd-service-advanced.xml).
@@ -54,13 +57,11 @@ or [Zabbix-Template-App-systemd-service-advanced.xml](https://raw.githubusercont
 zabbix_module_docker.so<br>
 https://www.zabbix.com/documentation/3.0/manual/config/items/loadablemodules  
 
-Compilation
-===========
+# Compilation
 
 See section [Compilation](https://github.com/monitoringartist/zabbix-docker-monitoring#compilation).
 
-Troubleshooting
-===============
+# Troubleshooting
 
 Edit your zabbix_agentd.conf and set DebugLevel:
 
@@ -68,13 +69,7 @@ Edit your zabbix_agentd.conf and set DebugLevel:
 
 Module debug messages will be available in standard zabbix_agentd.log.
 
-Issues and feature requests
-===========================
-
-Please use Github issue tracker.
-
-Recommended docs
-===============
+# Recommended docs
 
 - https://www.kernel.org/doc/Documentation/cgroups/blkio-controller.txt
 - https://www.kernel.org/doc/Documentation/cgroups/memory.txt
